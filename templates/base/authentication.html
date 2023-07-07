@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en" data-bs-theme="auto">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title%} Expense Management {% endblock %}</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+
+
+
+
+
+<link type="text/css" href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link type="text/css" href="{% static 'css/main.css' %}" rel="stylesheet">
+
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+    <main role ="main">
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+  </div>
+</div>
+
+
+
+
+
+  </body>
+</html>

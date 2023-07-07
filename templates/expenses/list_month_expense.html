@@ -1,0 +1,50 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-4">
+
+   <div class="row">
+    <div class="col-md-10" style="background-color:#80808038;">
+      <nav aria-label="breadcrumb" >
+        <ol class="breadcrumb mt-3">
+          <li class="breadcrumb-item">
+            <a href="{% url 'home' %}">Expenses</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Monthly Budget
+          </li>
+        </ol>
+      </nav>
+    </div>
+     <div class="col-md-2">
+ <a class="btn btn-primary" href="{% url 'addmonthbudget' %}">Add Monthly Budget</a>
+  </div>
+    </div>
+
+  <table class="table mt-3">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Spent</th>
+      <th scope="col">Remaining</th>
+      <th scope="col">Category</th>
+      <th scope="col">Update</th>
+    </tr>
+  </thead>
+  <tbody id="tablebody">
+  </tbody>
+</table>
+    <div class="row">
+  <div class="card-columns pt-4">
+    <div class="card bg-light">
+      <div class="card-body text-center" id="total_saving">
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="{% static 'js/list_month_expense.js' %}"></script>
+{% endblock %}

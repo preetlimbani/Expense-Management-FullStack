@@ -1,0 +1,21 @@
+# Python-related
+venv/
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE-related
+.vscode/
+.idea/
+
+# Environment-related
+.env
+
+# Project-specific
+instance/
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
